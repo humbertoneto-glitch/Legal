@@ -1,2 +1,0 @@
-# Legal
-Conhecendo o Brasil
