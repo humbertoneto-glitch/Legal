@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* ====== CABEÇALHO ====== */
+header {
+  background: linear-gradient(to bottom right, #1b5e20, #43a047);
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+header h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+/* ====== SEÇÕES ====== */
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 60px 50px;
+  gap: 40px;
+}
+
+section img {
+  width: 40%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+section .texto {
+  width: 50%;
+}
+
+h2 {
+  color: #1b5e20;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+/* ====== CORES DAS SEÇÕES ====== */
+.flora {
+  background-color: #e8f5e9;
+}
+
+.cultura {
+  background-color: #fffde7;
+  flex-direction: row-reverse;
+}
+
+.turismo {
+  background-color: #e3f2fd;
+}
+
+/* ====== RODAPÉ ====== */
+footer {
+  background-color: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 1em;
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 800px) {
+  section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  section img, section .texto {
+    width: 90%;
+  }
+}
