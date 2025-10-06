@@ -1,45 +1,161 @@
-# Legal
-Conhecendo o Brasil
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brasil: Flora, Cultura e Turismo</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Conhecendo o Brasil</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      background-color: #e0e0e0;
+    }
+
+    header {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    header img {
+      width: 100%;
+      height: auto;
+    }
+
+    header .texto {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: #f2b134;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1em;
+      color: #ffffff;
+    }
+
+    section {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 40px;
+      background-color: #355e3b;
+      color: white;
+    }
+
+    section:nth-child(even) {
+      background-color: #3b823e;
+    }
+
+    section img {
+      width: 40%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    section .texto {
+      width: 50%;
+    }
+
+    h2 {
+      color: #f2b134;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1em;
+      line-height: 1.6em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #214d28;
+      color: white;
+      font-size: 1em;
+    }
+
+    @media (max-width: 768px) {
+      section {
+        flex-direction: column;
+        text-align: center;
+      }
+      section img, section .texto {
+        width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Cabeçalho -->
   <header>
-    <h1>Descubra o Brasil</h1>
-    <p>Um país rico em natureza, cultura e belezas turísticas</p>
+    <img src="acd563a9-cc27-4fa6-b6aa-aadfba26f96a.png" alt="Cristo Redentor">
+    <div class="texto">
+      <h1>CONHECENDO O BRASIL</h1>
+      <p>Nesta página você vai conhecer mais sobre o Brasil:<br>
+      Pontos turísticos, comidas típicas, fauna, marcas e criações do país.</p>
+      <p><strong>Autores:</strong> Humberto Queiróz, Davi Nunes e Guilherme Ferreira</p>
+    </div>
   </header>
 
-  <section class="flora">
+  <!-- Seção Flora -->
+  <section>
+    <img src="2b1e41f2-d968-4d33-ac51-93cec0d71d01.png" alt="Flora Brasileira">
     <div class="texto">
-      <h2>Flora do Brasil</h2>
-      <p>O Brasil possui uma das maiores biodiversidades do planeta. Sua flora abrange biomas como a Amazônia, o Cerrado e a Mata Atlântica, com milhares de espécies únicas que contribuem para o equilíbrio ambiental e a beleza natural do país.</p>
+      <h2>FLORA BRASILEIRA</h2>
+      <p>A flora brasileira é considerada uma das mais ricas do mundo, reunindo cerca de 50 mil espécies de plantas, muitas endêmicas. 
+      Na Amazônia, destacam-se árvores como a castanheira e a seringueira; na Mata Atlântica, o pau-brasil, jequitibás e bromélias; 
+      no Cerrado, espécies resistentes como o pequi e o buriti; na Caatinga, plantas adaptadas à seca, como cactos e o juazeiro; 
+      no Pantanal, aguapés e cambarás; e no Pampa, campos de gramíneas e arbustos.</p>
+      <p>A flora é essencial para o equilíbrio ecológico, a economia (frutos, madeiras, plantas medicinais) e a cultura brasileira, 
+      sendo símbolo de identidade nacional.</p>
     </div>
-    <img src="2b1e41f2-d968-4d33-ac51-93cec0d71d01.png" alt="Flora do Brasil">
   </section>
 
-  <section class="cultura">
+  <!-- Seção Cultura -->
+  <section>
     <img src="1536b612-14c7-43fd-a2e1-6f09fcfe254b.png" alt="Cultura Brasileira">
     <div class="texto">
-      <h2>Cultura Brasileira</h2>
-      <p>A cultura do Brasil é marcada pela diversidade. Suas tradições misturam influências indígenas, africanas e europeias, refletidas na música, na culinária, nas festas populares e na arte. Essa mistura cria uma identidade única e vibrante.</p>
+      <h2>CULTURA BRASILEIRA</h2>
+      <p>A cultura brasileira é diversa e resultado da mistura de influências indígenas, africanas, europeias e de outros povos. 
+      Essa pluralidade aparece em várias áreas, como nas manifestações populares — carnaval, festas juninas, bumba-meu-boi e frevo —, 
+      na música, que vai do samba e da bossa nova ao forró, funk e sertanejo, e também na culinária, com pratos típicos como feijoada, 
+      moqueca, acarajé e churrasco.</p>
+      <p>Na literatura, nomes como Machado de Assis, Jorge Amado e Clarice Lispector marcaram a identidade nacional; 
+      nas artes e arquitetura, Tarsila do Amaral e Oscar Niemeyer ganharam destaque mundial.</p>
+      <p>O esporte, principalmente o futebol, também faz parte da identidade cultural do país.</p>
     </div>
   </section>
 
-  <section class="turismo">
-    <div class="texto">
-      <h2>Pontos Turísticos</h2>
-      <p>O Brasil é um destino turístico mundialmente famoso. Entre os principais pontos estão o Cristo Redentor, as Cataratas do Iguaçu e as praias de Fernando de Noronha, além de cidades encantadoras como Gramado e Ouro Preto.</p>
-    </div>
+  <!-- Seção Pontos Turísticos -->
+  <section>
     <img src="ec3f7284-cde9-4fa4-a03d-0d819ed73c95.png" alt="Pontos Turísticos do Brasil">
+    <div class="texto">
+      <h2>PONTOS TURÍSTICOS</h2>
+      <p><strong>Cristo Redentor (RJ)</strong> — uma das sete maravilhas do mundo moderno, no alto do Corcovado.</p>
+      <p><strong>Pão de Açúcar (RJ)</strong> — cartão-postal do Rio de Janeiro, com vista panorâmica da cidade.</p>
+      <p><strong>Pantanal (MS/MT)</strong> — maior área alagável do planeta, rico em fauna e flora.</p>
+      <p><strong>Lençóis Maranhenses (MA)</strong> — dunas de areia branca com lagoas cristalinas.</p>
+      <p><strong>Chapada Diamantina (BA)</strong> — região de trilhas, cachoeiras e grutas.</p>
+      <p><strong>Gramado (RS)</strong> — famosa pelo clima europeu, chocolates e o Natal Luz.</p>
+    </div>
   </section>
 
+  <!-- Rodapé -->
   <footer>
-    <p>© 2025 - Brasil: Natureza, Cultura e Turismo</p>
+    © 2025 - Conhecendo o Brasil | Projeto escolar de Humberto Queiróz, Davi Nunes e Guilherme Ferreira
   </footer>
+
 </body>
 </html>
